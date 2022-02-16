@@ -4,7 +4,8 @@ curso de kotlin de google
 Learn more about the course goals and requirements in this introduction to Unit 1. To check if your computer can download Android Studio, see the system requirements at the 
 bottom of this page: https://developer.android.com/studio
 
-Se puede entender un programa como una serie de instrucciones para que un sistema realice una acción. Por ejemplo, podrías escribir un programa que cree una tarjeta de cumpleaños
+Se puede entender un programa como una serie de instrucciones para que un sistema realice una acción. Por ejemplo, podrías escribir un programa que cree una tarjeta de
+cumpleaños
 y, en él, una instrucción para imprimir un texto de felicitación o calcular la edad de una persona en función de su año de nacimiento.
 
 De la misma manera en la que usas un lenguaje humano para comunicarte con otra persona, debes usar un lenguaje de programación para comunicarte con el sistema operativo de tu
@@ -31,17 +32,24 @@ y trabajar con él.
 
 La compilación es un proceso que convierte el código del programa en Kotlin en un formato que el sistema puede ejecutar. Si la compilación se completa correctamente, no habrá
 errores que impidan que el programa se ejecute. Si hay errores, aparecerán en el panel ubicado en la parte inferior.
-Si quieres que un amigo escriba "Hello World" en un papel, habrá mucha información implícita. Si solo le dices "Escribe 'Hello World' en este papel", hará suposiciones sobre la información que no le proporcionaste. Por ejemplo, supondrá que necesita un bolígrafo y que quieres que lo escriba en letras. La computadora no realiza estas suposiciones, por lo que debes brindarle instrucciones precisas que incluyan cada paso.
+Si quieres que un amigo escriba "Hello World" en un papel, habrá mucha información implícita. Si solo le dices "Escribe 'Hello World' en este papel", hará suposiciones sobre 
+la información que no le proporcionaste. Por ejemplo, supondrá que necesita un bolígrafo y que quieres que lo escriba en letras. La computadora no realiza estas suposiciones,
+por lo que debes brindarle instrucciones precisas que incluyan cada paso.
 
-Al igual que los idiomas humanos, los lenguajes de programación tienen estructuras. Si alguna vez estudiaste un segundo idioma, sabrás el desafío de aprender la gramática, la ortografía, quizás un nuevo alfabeto de símbolos y el vocabulario de ese idioma. Si bien aprender a programar tiene desafíos similares, afortunadamente, es menos complejo y más lógico que, por ejemplo, aprender inglés.
+Al igual que los idiomas humanos, los lenguajes de programación tienen estructuras. Si alguna vez estudiaste un segundo idioma, sabrás el desafío de aprender la gramática, la
+ortografía, quizás un nuevo alfabeto de símbolos y el vocabulario de ese idioma. Si bien aprender a programar tiene desafíos similares, afortunadamente, es menos complejo y 
+más lógico que, por ejemplo, aprender inglés.
 
 fun es una palabra en lenguaje de programación Kotlin. fun significa "función". Una función es una sección del programa que realiza una tarea específica.
-Nota: Kotlin tiene muchas palabras especiales con significados muy específicos, que conocerás a medida que aprendas a programar en este lenguaje. Por lo general, se denominan palabras clave o palabras reservadas.
+Nota: Kotlin tiene muchas palabras especiales con significados muy específicos, que conocerás a medida que aprendas a programar en este lenguaje. Por lo general, se denominan
+palabras clave o palabras reservadas.
 
-main es el nombre de esta función. Las funciones tienen nombres, a fin de poder distinguir unas de otras. Esta se llama main porque es la primera función, o la principal, a la que se llama cuando ejecutas el programa. Todos los programas en Kotlin necesitan una función llamada main.
+main es el nombre de esta función. Las funciones tienen nombres, a fin de poder distinguir unas de otras. Esta se llama main porque es la primera función, o la principal, a 
+la que se llama cuando ejecutas el programa. Todos los programas en Kotlin necesitan una función llamada main.
 
 El nombre de la función siempre va seguido de dos paréntesis ().
-Dentro de los paréntesis, puedes ingresar información que usará la función. Esta información de entrada de la función se denomina "argumentos" o, de forma abreviada, args. Seguirás aprendiendo sobre los argumentos más adelante.
+Dentro de los paréntesis, puedes ingresar información que usará la función. Esta información de entrada de la función se denomina "argumentos" o, de forma abreviada, args.
+Seguirás aprendiendo sobre los argumentos más adelante.
 
 Pon atención al par de llaves {} después de los paréntesis. Dentro de una función, se incluye código que permite completar una tarea. Las llaves rodean esas líneas de código.
 
@@ -60,7 +68,8 @@ fun main() {
     println("Happy Birthday!")
 }
 
-Bien hecho. Imprimiste una línea de texto con la función println() function. Sin embargo, puedes escribir tantas líneas de instrucciones dentro de una función como desees o necesites para realizar una tarea.
+Bien hecho. Imprimiste una línea de texto con la función println() function. Sin embargo, puedes escribir tantas líneas de instrucciones dentro de una función como desees 
+o necesites para realizar una tarea.
 
 Copia la línea println("Happy Birthday!") y pégala debajo dos veces más. Asegúrate de que las líneas que pegues estén dentro de las llaves de la función main.
 Cambia una parte del texto que deseas imprimir por un nombre, como "Jhansi".
@@ -73,17 +82,22 @@ fun main() {
     println("You are 25!")
 }
 
-Es normal cometer errores mientras programas, y la mayoría de las herramientas disponibles te brindarán comentarios para que los corrijas. En este paso, crearás un error para ver qué sucede.
+Es normal cometer errores mientras programas, y la mayoría de las herramientas disponibles te brindarán comentarios para que los corrijas. En este paso, crearás un error para
+ver qué sucede.
 
 En tu programa, quita las comillas alrededor del texto Jhansi. La línea se verá así:
 
 println(Jhansi)
 
-Ejecuta el programa. Deberías ver el texto Jhansi impreso en rojo y un signo de exclamación junto a la línea de código que modificaste. De esa forma, se indica dónde hay un error.
+Ejecuta el programa. Deberías ver el texto Jhansi impreso en rojo y un signo de exclamación junto a la línea de código que modificaste. De esa forma, se indica dónde hay 
+un error.
 
-Observa el panel de resultados. Aparecerá un mensaje con el mismo ícono de signo de exclamación y la palabra Error. A continuación, se muestra una descripción del error en tu código.
+Observa el panel de resultados. Aparecerá un mensaje con el mismo ícono de signo de exclamación y la palabra Error. A continuación, se muestra una descripción del error en 
+tu código.
 
-El mensaje, Unresolved reference: Jhansi, te indica lo que el sistema considera que es un error en el código. Incluso si no sabes qué significa el mensaje de error, es posible que puedas entender cuál es el problema. En este caso, sabes que la instrucción println() imprime texto. Ya aprendiste que el texto debe estar entre comillas. Si no está entre comillas, se generará un error.
+El mensaje, Unresolved reference: Jhansi, te indica lo que el sistema considera que es un error en el código. Incluso si no sabes qué significa el mensaje de error, es 
+posible que puedas entender cuál es el problema. En este caso, sabes que la instrucción println() imprime texto. Ya aprendiste que el texto debe estar entre comillas. Si no 
+está entre comillas, se generará un error.
 Agrega las comillas nuevamente.
 Ejecuta el programa para asegurarte de que vuelva a funcionar.
 ¡Felicitaciones! Ejecutaste y modificaste tu primer programa en Kotlin.
@@ -105,3 +119,30 @@ Sugerencia: Usa \n dentro del texto para agregar un salto de línea. Por ejemplo
 
 Sugerencia: Puedes imprimir una línea vacía si no ingresas texto (por ejemplo: println("")).
 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Android Studio es el entorno de desarrollo integrado (IDE) oficial para el desarrollo de apps para Android creado y distribuido por Google. Es un taller especializado con
+herramientas que permiten a los desarrolladores de software diseñar, compilar, ejecutar y probar apps para la plataforma de Android de manera más sencilla. Android Studio 
+usa IntelliJ IDEA como base e incluye el complemento para Android preinstalado con algunos ajustes específicos para la plataforma de Android, de modo que te resultará muy
+familiar.
+
+En este codelab, instalarás Android Studio.
+
+Android
+Android es un sistema operativo (como Windows, Linux o macOS) para smartphones y otros dispositivos, como tablets, wearables, TVs y vehículos. Podrás ejecutar apps en Android,
+como Teléfono, Mensajes, Gmail, Fotos y todos tus juegos.
+
+Sugerencia: Android es uno de los sistemas operativos para dispositivos móviles más populares. Hay más de 2,500 millones de dispositivos, entre los que se incluyen relojes, 
+TVs y vehículos, de todo el mundo que lo ejecutan
+
+Cómo descargar el archivo de instalación de Android Studio
+Abre cualquier navegador web y ve a https://developer.android.com/studio.
+Es el sitio para desarrolladores de Android, donde puedes descargar Android Studio. En esa página, se detecta automáticamente tu sistema operativo.
+
+Haz clic en Descargar Android Studio. Se abrirá la página Términos y Condiciones con el contrato de licencia de Android Studio.
+Lee el contrato de licencia.
+En la parte inferior de la página, marca "Leí y acepto los Términos y Condiciones anteriores" si estás de acuerdo con ellos.
+Haz clic en Descargar Android Studio para… a fin de iniciar la descarga.
+Cuando se te indique, guarda el archivo en una ubicación donde puedas localizarlo fácilmente (por ejemplo, en la carpeta Escritorio o Descargas).
+Espera a que se complete la descarga. Ese proceso puede tardar un poco, así que aprovecha para disfrutar de un rico té.
